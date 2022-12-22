@@ -4,6 +4,7 @@ body::-webkit-scrollbar {
 .container{
     background-color: #E5E5E5;
     font-family: 'Roboto', sans-serif;
+    color: #262626;
 }
 
 .header-mobile{
@@ -111,6 +112,9 @@ p{
 .card-perfil{
     display: flex;
     align-items: center;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
 }
 .img-post{
     height: 612px;
@@ -242,6 +246,9 @@ p{
         font-size: 12px;
         line-height: 14px;
         color: #979797;
+
+        width: 215px;
+        height: 28px;
     }
     main{
         display: flex;
