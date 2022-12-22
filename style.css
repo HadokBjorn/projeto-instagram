@@ -161,6 +161,9 @@ p{
 .like-info b{
     font-weight: bold;
 }
+sidebar{
+    display: none;
+}
 .menu-bottom{
     height: 54px;
     width: 100%;
@@ -178,10 +181,9 @@ p{
     margin: 0 20px;
 }
 
-@media (min-width: 935px) {
+@media (min-width: 614px) {
     body{
         display: flex;
-        flex-direction: column;
         align-items: center;
         background-color: #fff;
     }
@@ -212,11 +214,12 @@ p{
     }
 
     .header-desktop > div{
-        width: 935px;
+        width: 100%;
         display: flex;
         align-items: center;
         justify-content: space-between;
         font-size: 20px;
+        padding: 0 20px;
     }
     
     .left{
@@ -252,6 +255,8 @@ p{
     }
     main{
         display: flex;
+        flex-direction: column;
+        align-items: center;
     }
     .story{
         box-sizing: border-box;
@@ -281,6 +286,35 @@ p{
     }
 
     sidebar{
+        display: none;
+    }
+
+    .container > footer{
+        display: none;
+    }
+}
+
+@media (min-width: 935px){
+
+    body{
+        flex-direction: column;
+    }
+    
+    .header-desktop > div{
+        width: 935px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        font-size: 20px;
+    }
+
+    main{
+        flex-direction: row;
+        align-items: flex-start;
+    }
+    
+    sidebar{
+        display: block;
         width: 293px;
         background-color: transparent;
         position: fixed;
@@ -374,9 +408,5 @@ p{
         line-height: 13px;
         color: #C7C7C7;
         margin-bottom: 18px;
-    }
-
-    .container > footer{
-        display: none;
     }
 }
