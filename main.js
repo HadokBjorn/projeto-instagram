@@ -14,7 +14,7 @@ function linkStorie () {
             img:"./img/posts/power/power-banheira.png",
             nome:"Power",
         },{
-            img:"./img/posts/Aki/aki-raposa-fundo.jpg",
+            img:"./img/posts/aki/aki-raposa-fundo.jpg",
             nome:"Aki",
         },{
             img:"./img/posts/anjo/anjo-horizonte.png",
