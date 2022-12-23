@@ -15,7 +15,7 @@ function linkStorie () {
             nome:"Power",
         },
         {
-            img:"./img/posts/Aki/Aki-espada.png",
+            img:"./img/posts/Aki/aki-espada.png",
             nome:"Aki",
         },
         {
