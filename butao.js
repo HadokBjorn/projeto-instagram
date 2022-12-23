@@ -1,18 +1,12 @@
-let clicou = true;
 const btnPrev = document.getElementById("prev");
+const firstCard = document.getElementById("firs-card");
+
 function esquerda(){
-        clicou = false;
-        if(clicou==false){
-                document.querySelector('.story').scrollBy(-100,0);
-        }
+        document.querySelector('.story').scrollBy(-100,0);
+        console.log(firstCard.offsetLeft);
 }
 
 function direita(){
-        clicou = true;
         btnPrev.style.display = "block";
-        if(clicou){
         document.querySelector('.story').scrollBy(100,0);
-
-        
-        }
 }

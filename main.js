@@ -44,9 +44,16 @@ function linkStorie () {
         },
     ];
 
-    let postItem = ``;
+    let postItem = `
+    <a href="./page-stories/index.html#${1}">
+        <div class="card-story" id="firs-card">
+            <img src="${perfilStorie[0].img}" />
+            <p>${perfilStorie[0].nome}</p>
+        </div>
+    </a>
+`;
 
-    for (let i = 0; i < perfilStorie.length; i++) {
+    for (let i = 1; i < perfilStorie.length; i++) {
         postItem += `
         <a href="./page-stories/index.html#${i+1}">
             <div class="card-story">
