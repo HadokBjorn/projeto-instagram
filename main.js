@@ -13,10 +13,12 @@ function linkStorie () {
         {
             img:"./img/posts/power/power-banheira.png",
             nome:"Power",
-        },{
-            img:"./img/posts/aki/aki-raposa-fundo.jpg",
+        },
+        {
+            img:"./img/posts/aki/aki-espada.png",
             nome:"Aki",
-        },{
+        },
+        {
             img:"./img/posts/anjo/anjo-horizonte.png",
             nome:"Angel",
         },
