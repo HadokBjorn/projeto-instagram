@@ -4,20 +4,76 @@ function inserirImagem() {
     let hashPage = window.location.hash.substring(1);
     let storieFoto = new Map();
     // Adicionar os demais hashs
-    storieFoto.set('2',[
+    storieFoto.set('1',[
         '../img/posts/Aki/aki.jpg',
         '../img/posts/Aki/aki.jpg',
         '../img/posts/Aki/aki.jpg',
         '../img/posts/Aki/aki.jpg',
         
     ])
-    storieFoto.set('3',[
+    storieFoto.set('2',[
     '../img/posts/himeno/himeno-aquarela.jpg',
     '../img/posts/himeno/himeno-aquarela.jpg',
     '../img/posts/himeno/himeno-aquarela.jpg',
     '../img/posts/himeno/himeno-aquarela.jpg',
     
     ])
+    storieFoto.set('3',[
+        '../img/posts/himeno/himeno-aquarela.jpg',
+        '../img/posts/himeno/himeno-aquarela.jpg',
+        '../img/posts/himeno/himeno-aquarela.jpg',
+        '../img/posts/himeno/himeno-aquarela.jpg',
+        
+        ])
+        storieFoto.set('4',[
+            '../img/posts/himeno/himeno-aquarela.jpg',
+            '../img/posts/himeno/himeno-aquarela.jpg',
+            '../img/posts/himeno/himeno-aquarela.jpg',
+            '../img/posts/himeno/himeno-aquarela.jpg',
+            
+            ])
+            storieFoto.set('5',[
+                '../img/posts/himeno/himeno-aquarela.jpg',
+                '../img/posts/himeno/himeno-aquarela.jpg',
+                '../img/posts/himeno/himeno-aquarela.jpg',
+                '../img/posts/himeno/himeno-aquarela.jpg',
+                
+                ])
+                storieFoto.set('6',[
+                    '../img/posts/himeno/himeno-aquarela.jpg',
+                    '../img/posts/himeno/himeno-aquarela.jpg',
+                    '../img/posts/himeno/himeno-aquarela.jpg',
+                    '../img/posts/himeno/himeno-aquarela.jpg',
+                    
+                    ])
+                    storieFoto.set('7',[
+                        '../img/posts/himeno/himeno-aquarela.jpg',
+                        '../img/posts/himeno/himeno-aquarela.jpg',
+                        '../img/posts/himeno/himeno-aquarela.jpg',
+                        '../img/posts/himeno/himeno-aquarela.jpg',
+                        
+                        ])
+                        storieFoto.set('8',[
+                            '../img/posts/Aki/aki.jpg',
+                            '../img/posts/Aki/aki.jpg',
+                            '../img/posts/Aki/aki.jpg',
+                            '../img/posts/Aki/aki.jpg',
+                            
+                        ])
+                        storieFoto.set('9',[
+                            '../img/posts/Aki/aki.jpg',
+                            '../img/posts/Aki/aki.jpg',
+                            '../img/posts/Aki/aki.jpg',
+                            '../img/posts/Aki/aki.jpg',
+                            
+                        ])
+                        storieFoto.set('10',[
+                            '../img/posts/Aki/aki.jpg',
+                            '../img/posts/Aki/aki.jpg',
+                            '../img/posts/Aki/aki.jpg',
+                            '../img/posts/Aki/aki.jpg',
+                            
+                        ])
     if (storieFoto.has(hashPage)){
         let allImages = ``;
         let fotos = storieFoto.get(hashPage);

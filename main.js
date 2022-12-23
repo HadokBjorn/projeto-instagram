@@ -79,28 +79,28 @@ function newPost(){
         curtidas:45
         },
         {
-            perfi:"./img/stories/denji-pochita.png",
-            nome:"Makima",
-            post:"./img/posts/makima/makima-dogs.jpg",
-            perfiCurtidor: "./img/stories/denji-pochita.png",
-            seguidor:"Denji",
-            curtidas:450
+        perfi:"./img/perfis/makima-perfil.png",
+        nome:"Makima",
+        post:"./img/posts/makima/makima-dogs.jpg",
+        perfiCurtidor: "./img/stories/denji-pochita.png",
+        seguidor:"Denji",
+        curtidas:450
         },
         {
-            perfi:"./img/stories/denji-pochita.png",
-            nome:"Makima",
-            post:"./img/posts/makima/makima-conceitual.jpg",
-            perfiCurtidor: "./img/stories/denji-pochita.png",
-            seguidor:"Denji",
-            curtidas:"33 mil"
+        perfi:"./img/perfis/makima-perfil.png",
+        nome:"Makima",
+        post:"./img/posts/makima/makima-conceitual.jpg",
+        perfiCurtidor: "./img/stories/denji-pochita.png",
+        seguidor:"Denji",
+        curtidas:"33 mil"
         },
         {
-            perfi:"./img/stories/denji-pochita.png",
-            nome:"Denji",
-            post:"./img/stories/denji-pochita.png",
-            perfiCurtidor: "./img/perfis/makima-perfil.png",
-            seguidor:"Makima",
-            curtidas:45
+        perfi:"./img/perfis/makima-perfil.png",
+        nome:"Makima",
+        post:"./img/posts/makima/makima.gif",
+        perfiCurtidor: "./img/stories/denji-pochita.png",
+        seguidor:"Denji",
+        curtidas:"33 mil"
         },
     ];
     
