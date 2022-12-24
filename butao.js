@@ -24,8 +24,15 @@ function direita(){
 }
 
 function comentar(){
-        coments.forEach((coment) => {
-                coment.style.display = "block";
-        })
-
+        for(let i=0; i<coments.length; i++){
+                let idComent = document.getElementById(`icon-coment${[i]}`);
+                idComent.addEventListener("click",(e) =>{
+                if(coments[i].style.display=='block'){
+                        coments[i].style.display = "none";
+                        return;
+                }
+                        coments[i].style.display = "block";
+                });
+        }
 }
+comentar();

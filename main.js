@@ -116,7 +116,7 @@ function newPost(){
     for (let i = 0; i < posts.length; i++) {
 
         postItem += `
-            <section class="post-container">
+            <section class="post-container" id="${[i]}">
                 <header class="top-post">
                     <div class="card-perfil">
                         <img src="${posts[i].perfi}" />
@@ -131,7 +131,7 @@ function newPost(){
                     <header class="interaction">
                         <div class="like-post">
                             <ion-icon name="heart-outline"></ion-icon>
-                            <ion-icon name="chatbubble-outline" onclick="comentar()" id="icon-coment${[i]}"></ion-icon>
+                            <ion-icon name="chatbubble-outline" id="icon-coment${[i]}"></ion-icon>
                             <ion-icon name="paper-plane-outline"></ion-icon>
                         </div>
                         <ion-icon name="bookmark-outline"></ion-icon>
@@ -142,7 +142,7 @@ function newPost(){
                     </article>
                 </article>
                 <footer id="rodape-post">
-                    <main class="coments" id="div-coment${[i]}">
+                    <main class="coments " >
                         <div class="like-info">
                             <img src="${posts[i].perfi}" />
                             <p>${posts[i].nome}</p>

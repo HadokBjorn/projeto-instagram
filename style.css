@@ -363,7 +363,7 @@ sidebar{
     }
     .post-container{
         width: 614px;
-        height: 749px;
+        height: 100%;
         margin-top: 24px;
         border-radius: 3px;
         background: #FFFFFF;
