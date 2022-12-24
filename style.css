@@ -103,7 +103,6 @@ p{
     border-radius: 33px;
 }
 .post-container{
-    /*margin-bottom: 54px;*/
     display: flex;
     flex-direction: column;
     margin-bottom: 60px;
@@ -150,7 +149,6 @@ p{
     height: 76px;
     padding-top: 10px;
     border-top: 1px solid #DBDBDB;
-    /*margin-bottom: 60px;*/
     padding: 0 15px;
     background-color: #fff;
 }
@@ -314,7 +312,7 @@ sidebar{
         font-weight: 400;
         font-size: 12px;
         line-height: 14px;
-        color: #979797;
+        color: #262626;
 
         width: 215px;
         height: 28px;
