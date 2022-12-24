@@ -1,6 +1,7 @@
 const btnPrev = document.getElementById("prev");
 const btnNext = document.getElementById("next");
 const firstCard = document.getElementById("firs-card");
+const coments = document.querySelectorAll(".coments");
 
 let cont = 0;
 function esquerda(){
@@ -20,4 +21,11 @@ function direita(){
         if(cont>=3){
                 btnNext.style.display = "none";
         }
+}
+
+function comentar(){
+        coments.forEach((coment) => {
+                coment.style.display = "block";
+        })
+
 }

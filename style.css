@@ -6,6 +6,10 @@ body::-webkit-scrollbar {
     font-family: 'Roboto', sans-serif;
     color: #262626;
 }
+.container input{
+    box-shadow: 0 0 0 0;
+    outline: 0;
+}
 
 .header-mobile{
     background-color: #fff;
@@ -29,7 +33,7 @@ body::-webkit-scrollbar {
 }
 a{
     text-decoration: none;
-    color:#000;
+    color: #262626;
 }
 a:active{
     user-select: none;
@@ -99,10 +103,11 @@ p{
     border-radius: 33px;
 }
 .post-container{
-    margin-top: 24px;
-    margin-bottom: 54px;
+    /*margin-bottom: 54px;*/
     display: flex;
     flex-direction: column;
+    margin-bottom: 60px;
+
 }
 .top-post{
     background-color: #fff;
@@ -145,8 +150,7 @@ p{
     height: 76px;
     padding-top: 10px;
     border-top: 1px solid #DBDBDB;
-    border-bottom: 1px solid #DBDBDB;
-    margin-bottom: 60px;
+    /*margin-bottom: 60px;*/
     padding: 0 15px;
     background-color: #fff;
 }
@@ -172,11 +176,57 @@ p{
     font-weight: 300;
     font-size: 14px;
     line-height: 16px;
-    color:#000;
+    color: #262626;
 }
 .like-info b{
     font-weight: bold;
 }
+#rodape-post{
+    bottom: 0;
+    width: inherit;
+}
+.coments{
+    width: inherit;
+    height: 240px;
+    background-color: orangered;
+    display: none;
+}
+.addComent{
+    
+    height: 40px;
+    display: flex;
+    padding: 0 20px;
+    font-size: 12px;
+    align-items: center;
+    border-top: 1px solid #DBDBDB;
+    border-bottom: 1px solid #DBDBDB;
+    background-color: #fff;
+    justify-content: space-between;
+
+}
+.addComent > ion-icon {
+    font-size: 25px;
+}
+
+.addComent > input {
+    border:none;
+    width: -webkit-fill-available;;
+    height: inherit;
+    padding: 0 20px;
+    text-align: justify;
+    background-color: transparent;
+    color: #262626;
+}
+.addComent > button {
+    border: none;
+    color:#B2DFFC;
+    background-color: transparent;
+    transition: color 300ms;
+}
+.addComent > button:hover {
+    color: #0095F6;
+}
+
 sidebar{
     display: none;
 }
@@ -316,10 +366,11 @@ sidebar{
     .post-container{
         width: 614px;
         height: 749px;
+        margin-top: 24px;
+        border-radius: 3px;
         background: #FFFFFF;
         border-left: 1px solid #DBDBDB;
         border-right: 1px solid #DBDBDB;
-        border-radius: 3px;
     }
 
     .top-post{
@@ -443,7 +494,7 @@ sidebar{
         line-height: 16px;
     }
     h2{
-        color: #262626
+        color: #262626;
     }
     h3{
         color: #8E8E8E;

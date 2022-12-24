@@ -127,19 +127,32 @@ function newPost(){
                 <figure class="img-post">
                     <img src="${posts[i].post}" />
                 </figure>
-                <footer class="bottom-post">
-                    <div class="interaction">
+                <article class="bottom-post">
+                    <header class="interaction">
                         <div class="like-post">
                             <ion-icon name="heart-outline"></ion-icon>
-                            <ion-icon name="chatbubble-outline"></ion-icon>
+                            <ion-icon name="chatbubble-outline" onclick="comentar()" id="icon-coment${[i]}"></ion-icon>
                             <ion-icon name="paper-plane-outline"></ion-icon>
                         </div>
                         <ion-icon name="bookmark-outline"></ion-icon>
-                    </div>
-                    <div class="like-info">
+                    </header>
+                    <article class="like-info">
                         <img src="${posts[i].perfiCurtidor}" />
                         <p>curtido por <b>${posts[i].seguidor}</b> e <b>outras ${posts[i].curtidas} pessoas</b></p>
-                    </div>
+                    </article>
+                </article>
+                <footer id="rodape-post">
+                    <main class="coments" id="div-coment${[i]}">
+                        <div class="like-info">
+                            <img src="${posts[i].perfi}" />
+                            <p>${posts[i].nome}</p>
+                        </div>
+                    </main>
+                    <footer class="addComent">
+                        <ion-icon name="happy-outline"></ion-icon>
+                        <input placeholder="Adicionar comentário...">
+                        <button class="publicar">Publicar</button>
+                    </footer>
                 </footer>
             </section>
             `
