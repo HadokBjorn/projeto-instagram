@@ -145,6 +145,11 @@ p{
 .img-post img{
     max-width: 100%;
 }
+.video{
+    height: 100%;
+    max-width: inherit;
+}
+
 .bottom-post{
     height: 76px;
     padding-top: 10px;

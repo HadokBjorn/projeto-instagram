@@ -36,3 +36,16 @@ function comentar(){
         }
 }
 comentar();
+
+/*function removeVideo(){
+        const boxVideo = document.querySelector(".video")
+        let videos = document.querySelectorAll(".mp4");
+        videos.forEach((video) => {
+                
+                if(video.src==undefined){
+                        boxVideo.style.display = "none";
+                        console.log(video.src);
+                }
+        });
+}
+removeVideo();*/

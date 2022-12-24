@@ -83,7 +83,9 @@ function newPost(){
         post:"./img/posts/makima/makima-terno.jpg",
         perfiCurtidor: "./img/stories/denji-pochita.png",
         seguidor:"Denji",
-        curtidas:45
+        curtidas:45,
+        videoMp4:'',
+        videoOgv:"",
         },
         {
         perfi:"./img/perfis/makima-perfil.png",
@@ -91,7 +93,9 @@ function newPost(){
         post:"./img/posts/makima/makima-dogs.jpg",
         perfiCurtidor: "./img/stories/denji-pochita.png",
         seguidor:"Denji",
-        curtidas:450
+        curtidas:450,
+        videoMp4:'',
+        videoOgv:"",
         },
         {
         perfi:"./img/perfis/makima-perfil.png",
@@ -99,7 +103,9 @@ function newPost(){
         post:"./img/posts/makima/makima-conceitual.jpg",
         perfiCurtidor: "./img/stories/denji-pochita.png",
         seguidor:"Denji",
-        curtidas:"33 mil"
+        curtidas:"33 mil",
+        videoMp4:'',
+        videoOgv:"",
         },
         {
         perfi:"./img/perfis/makima-perfil.png",
@@ -107,8 +113,20 @@ function newPost(){
         post:"./img/posts/makima/makima.gif",
         perfiCurtidor: "./img/stories/denji-pochita.png",
         seguidor:"Denji",
-        curtidas:"33 mil"
+        curtidas:"33 mil",
+        videoMp4:'',
+        videoOgv:"",
         },
+        {
+            perfi:"./img/perfis/makima-perfil.png",
+            nome:"Makima",
+            post:"",
+            perfiCurtidor: "./img/stories/denji-pochita.png",
+            seguidor:"Denji",
+            curtidas:"33 mil",
+            videoMp4:"./img/video.mp4",
+            videoOgv:"./img/video.ogv",
+            },
     ];
     
     let postItem = ``;
@@ -124,9 +142,14 @@ function newPost(){
                     </div>
                     <ion-icon name="ellipsis-horizontal"></ion-icon>
                 </header>
-                <figure class="img-post">
+                <div class="img-post">
                     <img src="${posts[i].post}" />
-                </figure>
+                    <video class="video" autoplay muted loop controls> 
+                        <source src="${posts[i].videoMp4}" type="video/mp4" >
+                        <source src="${posts[i].videoOgv}" type="video/ogv" >
+                    </video>
+                </div>
+                
                 <article class="bottom-post">
                     <header class="interaction">
                         <div class="like-post">
