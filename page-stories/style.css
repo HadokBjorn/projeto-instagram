@@ -64,7 +64,7 @@ img{
     content: '';
     display: block;
     height: inherit;
-    background-color: rgba(236, 22, 22, 0.9);
+    background-color: rgb(255, 255, 255);
     border-radius: 3px;
     transform: translateX(-100%);
     animation: barra 5s forwards linear;

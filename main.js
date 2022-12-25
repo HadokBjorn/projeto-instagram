@@ -145,7 +145,7 @@ function newPost(){
                 <div class="img-post">
                     <img src="${posts[i].post}" />
                     <video class="video" autoplay muted loop controls> 
-                        <source src="${posts[i].videoMp4}" type="video/mp4" >
+                        <source class="mp4" src="${posts[i].videoMp4}" type="video/mp4" >
                         <source src="${posts[i].videoOgv}" type="video/ogv" >
                     </video>
                 </div>

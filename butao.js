@@ -22,15 +22,20 @@ function direita(){
                 btnNext.style.display = "none";
         }
 }
+function mudaTema(){
+        document.body.classList.toggle("dark");
+}
 
 function comentar(){
         for(let i=0; i<coments.length; i++){
                 let idComent = document.getElementById(`icon-coment${[i]}`);
                 idComent.addEventListener("click",(e) =>{
                 if(coments[i].style.display=='block'){
+                        
                         coments[i].style.display = "none";
                         return;
                 }
+                        coments[i].classList.add("open-coments");
                         coments[i].style.display = "block";
                 });
         }
@@ -41,8 +46,9 @@ comentar();
         const boxVideo = document.querySelector(".video")
         let videos = document.querySelectorAll(".mp4");
         videos.forEach((video) => {
-                
-                if(video.src==undefined){
+                console.log(video.src);
+                if(video.src.length<=22){
+                        boxVideo.removeChild
                         boxVideo.style.display = "none";
                         console.log(video.src);
                 }
