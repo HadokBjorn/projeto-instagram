@@ -20,16 +20,20 @@
     <body>
         <section class="container">
             <header class="header-mobile">
-                <ion-icon onclick="mudaTema()" name="moon-sharp"></ion-icon>
-                <ion-icon name="logo-instagram"></ion-icon>
-                <img src="./img/logo.png" />
+                <div class="left">
+                    <ion-icon name="logo-instagram"></ion-icon>
+                    <ion-icon onclick="mudaTema()" name="moon-sharp"></ion-icon>
+                </div>
+                <img class="light-logo" src="./img/logo.png" />
+                <img class="dark-logo" src="./img/logo-branca.png"/>
                 <ion-icon name="paper-plane-outline"></ion-icon>
             </header>
             <header class="header-desktop">
                 <div>                
                     <div class="left">
                         <ion-icon name="logo-instagram"></ion-icon>
-                        <img src="./img/logo.png" />
+                <img class="dark-logo" src="./img/logo-branca.png"/>
+                <img class="light-logo" src="./img/logo.png" />
                         <ion-icon onclick="mudaTema()" name="contrast-sharp"></ion-icon>
                     </div>
                     <input placeholder="Pesquisar">

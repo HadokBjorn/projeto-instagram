@@ -84,8 +84,6 @@ function newPost(){
         perfiCurtidor: "./img/stories/denji-pochita.png",
         seguidor:"Denji",
         curtidas:45,
-        videoMp4:'',
-        videoOgv:"",
         },
         {
         perfi:"./img/perfis/makima-perfil.png",
@@ -94,8 +92,6 @@ function newPost(){
         perfiCurtidor: "./img/stories/denji-pochita.png",
         seguidor:"Denji",
         curtidas:450,
-        videoMp4:'',
-        videoOgv:"",
         },
         {
         perfi:"./img/perfis/makima-perfil.png",
@@ -104,8 +100,6 @@ function newPost(){
         perfiCurtidor: "./img/stories/denji-pochita.png",
         seguidor:"Denji",
         curtidas:"33 mil",
-        videoMp4:'',
-        videoOgv:"",
         },
         {
         perfi:"./img/perfis/makima-perfil.png",
@@ -114,25 +108,35 @@ function newPost(){
         perfiCurtidor: "./img/stories/denji-pochita.png",
         seguidor:"Denji",
         curtidas:"33 mil",
-        videoMp4:'',
-        videoOgv:"",
         },
         {
             perfi:"./img/perfis/makima-perfil.png",
             nome:"Makima",
-            post:"",
+            post:"./img/posts/power/power-denji-oculos.jpg",
             perfiCurtidor: "./img/stories/denji-pochita.png",
             seguidor:"Denji",
             curtidas:"33 mil",
-            videoMp4:"./img/video.mp4",
-            videoOgv:"./img/video.ogv",
             },
+    ];
+
+    const videosPost = [
+        {
+        perfi:"./img/perfis/makima-perfil.png",
+        nome:"Makima",
+        perfiCurtidor: "./img/stories/denji-pochita.png",
+        seguidor:"Denji",
+        curtidas:"33 mil",
+        videoMp4:"./img/video.mp4",
+        videoOgv:"./img/video.ogv",
+        },
+    
     ];
     
     let postItem = ``;
+    let quantidadeImage = 0;
 
     for (let i = 0; i < posts.length; i++) {
-
+        quantidadeImage = i;
         postItem += `
             <section class="post-container" id="${[i]}">
                 <header class="top-post">
@@ -144,10 +148,6 @@ function newPost(){
                 </header>
                 <div class="img-post">
                     <img src="${posts[i].post}" />
-                    <video class="video" autoplay muted loop controls> 
-                        <source class="mp4" src="${posts[i].videoMp4}" type="video/mp4" >
-                        <source src="${posts[i].videoOgv}" type="video/ogv" >
-                    </video>
                 </div>
                 
                 <article class="bottom-post">
@@ -180,7 +180,62 @@ function newPost(){
             </section>
             `
     }
+    console.log(quantidadeImage)
     postBox.innerHTML += postItem;
+    
+
+
+    let postVideoItem = ``;
+
+    for (let i = 0; i < videosPost.length; i++) {
+
+        postVideoItem += `
+            <section class="post-container" id="${[i]}">
+                <header class="top-post">
+                    <div class="card-perfil">
+                        <img src="${videosPost[i].perfi}" />
+                        <p>${videosPost[i].nome}</p>
+                    </div>
+                    <ion-icon name="ellipsis-horizontal"></ion-icon>
+                </header>
+                <div class="img-post">
+                    <video class="video" autoplay muted loop controls> 
+                        <source class="mp4" src="${videosPost[i].videoMp4}" type="video/mp4" >
+                        <source src="${videosPost[i].videoOgv}" type="video/ogv" >
+                    </video>
+                </div>
+                
+                <article class="bottom-post">
+                    <header class="interaction">
+                        <div class="like-post">
+                            <ion-icon name="heart-outline"></ion-icon>
+                            <ion-icon name="chatbubble-outline" id="icon-coment${[i+1+quantidadeImage]}"></ion-icon>
+                            <ion-icon name="paper-plane-outline"></ion-icon>
+                        </div>
+                        <ion-icon name="bookmark-outline"></ion-icon>
+                    </header>
+                    <article class="like-info">
+                        <img src="${videosPost[i].perfiCurtidor}" />
+                        <p>curtido por <b>${videosPost[i].seguidor}</b> e <b>outras ${videosPost[i].curtidas} pessoas</b></p>
+                    </article>
+                </article>
+                <footer id="rodape-post">
+                    <main class="coments " >
+                        <div class="like-info">
+                            <img src="${videosPost[i].perfi}" />
+                            <p>${videosPost[i].nome}</p>
+                        </div>
+                    </main>
+                    <footer class="addComent">
+                        <ion-icon name="happy-outline"></ion-icon>
+                        <input placeholder="Adicionar comentário...">
+                        <button class="publicar">Publicar</button>
+                    </footer>
+                </footer>
+            </section>
+            `
+    }
+    postBox.innerHTML += postVideoItem;
 
 }
 newPost();
