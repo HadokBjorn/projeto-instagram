@@ -2,7 +2,7 @@ body::-webkit-scrollbar {
     height: 0;
 }
 .dark, .dark section, .dark header, .dark article, .dark main, .dark footer, .dark figure, .dark video, .dark div, .dark h1, .dark h2{
-    background-color: #000;
+    background-color: #303030;
     color: #E5E5E5;
 }
 .container{
@@ -14,7 +14,6 @@ body::-webkit-scrollbar {
     box-shadow: 0 0 0 0;
     outline: 0;
 }
-
 .header-mobile{
     background-color: #fff;
     height:54px;
@@ -27,6 +26,9 @@ body::-webkit-scrollbar {
     top: 0;
     left: 0;
     z-index: 2;
+}
+.dark .header-mobile{
+    background-color: #262626;
 }
 .dark-logo{
     display: none;
@@ -201,7 +203,7 @@ p{
     color: #fff;
 }
 
-.like-info b{
+b{
     font-weight: bold;
 }
 #rodape-post{
@@ -211,8 +213,22 @@ p{
 .coments{
     width: inherit;
     height: 240px;
-    background-color: orangered;
+    background-color: transparent;
     display: none;
+}
+.card-coments{
+    display: flex;
+    flex-direction: row;
+    padding: 0 15px;
+}
+.card-coments ion-icon{
+    font-size: 25px;
+}
+.card-coments > img {
+    width: 32px;
+    height: 32px;
+    border-radius: 16px;
+    margin-right: 10px;
 }
 .open-coments {
 	-webkit-animation: open-coments 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
@@ -281,6 +297,7 @@ p{
     justify-content: space-between;
 
 }
+
 .addComent > ion-icon {
     font-size: 25px;
 }
@@ -358,6 +375,9 @@ sidebar{
         top: 0;
         left: 0;
         z-index: 2;
+    }
+    .dark .header-desktop, .dark .header-desktop div{
+        background-color: #262626;
     }
 
     .header-desktop > div{

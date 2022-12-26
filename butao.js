@@ -41,17 +41,3 @@ function comentar(){
         }
 }
 comentar();
-
-/*function removeVideo(){
-        const boxVideo = document.querySelector(".video")
-        let videos = document.querySelectorAll(".mp4");
-        videos.forEach((video) => {
-                console.log(video.src);
-                if(video.src.length<=22){
-                        boxVideo.removeChild
-                        boxVideo.style.display = "none";
-                        console.log(video.src);
-                }
-        });
-}
-removeVideo();*/
