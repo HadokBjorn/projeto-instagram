@@ -129,7 +129,24 @@ function newPost(){
         videoMp4:"./img/video.mp4",
         videoOgv:"./img/video.ogv",
         },
-    
+        {
+        perfi:"./img/perfis/makima-perfil.png",
+        nome:"Makima",
+        perfiCurtidor: "./img/stories/denji-pochita.png",
+        seguidor:"Denji",
+        curtidas:"33 mil",
+        videoMp4:"https://img.ifunny.co/videos/1191493d057b07d85c9710529aff950fab284c566b1ff2b01d8642e830bfadc9_1.mp4",
+        videoOgv:"./img/video.ogv",
+        },
+        {
+        perfi:"./img/perfis/makima-perfil.png",
+        nome:"Makima",
+        perfiCurtidor: "./img/stories/denji-pochita.png",
+        seguidor:"Denji",
+        curtidas:"33 mil",
+        videoMp4:"https://v16-webapp.tiktok.com/57e7230d11b00ee8659d5eb4f3d0ed41/63a9eefd/video/tos/useast2a/tos-useast2a-pve-0037-aiso/e6e9a31190f1469bb48e8953ce1002a8/?a=1988&ch=0&cr=0&dr=0&lr=tiktok&cd=0%7C0%7C1%7C0&cv=1&br=1256&bt=628&cs=0&ds=3&ft=4b~OyMXh8Zmo0W_ak64jVO2cDpWrKsdm&mime_type=video_mp4&qs=0&rc=ZjRnOWQ1N2QzO2RpNTVnZEBpanU7bzc6Zjd3ZzMzZjgzM0A2YS9hMi00Xi0xYC8yNDI1YSNhYG9ecjQwXzZgLS1kL2Nzcw%3D%3D&l=202212261258548213557D6D8FE20FEDA0&btag=80000.mp4",
+        videoOgv:"./img/video.ogv",
+        },
     ];
     
     let postItem = ``;
