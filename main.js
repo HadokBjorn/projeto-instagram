@@ -164,8 +164,33 @@ function newPost(){
                         <p>curtido por <b>${posts[i].seguidor}</b> e <b>outras ${posts[i].curtidas} pessoas</b></p>
                     </article>
                 </article>
+                <div class="card-coments">
+                        <img src="${posts[i].perfi}" />
+                        <p><b>${posts[i].nome}</b> Não é o rosto que faz de alguém um monstro, são as escolhas que elas fazem para as suas vidas.</p>
+                        <ion-icon name="heart-outline"></ion-icon>
+                </div>
                 <footer id="rodape-post">
                     <main class="coments " >
+                    <div class="card-coments">
+                        <img src="${posts[i].perfi}" />
+                        <p><b>${posts[i].nome}</b> Não é o rosto que faz de alguém um monstro, são as escolhas que elas fazem para as suas vidas.</p>
+                        <ion-icon name="heart-outline"></ion-icon>
+                    </div>
+                    <div class="card-coments">
+                        <img src="${posts[i].perfi}" />
+                        <p><b>${posts[i].nome}</b> Não é o rosto que faz de alguém um monstro, são as escolhas que elas fazem para as suas vidas.</p>
+                        <ion-icon name="heart-outline"></ion-icon>
+                    </div>
+                    <div class="card-coments">
+                        <img src="${posts[i].perfi}" />
+                        <p><b>${posts[i].nome}</b> Não é o rosto que faz de alguém um monstro, são as escolhas que elas fazem para as suas vidas.</p>
+                        <ion-icon name="heart-outline"></ion-icon>
+                    </div>
+                    <div class="card-coments">
+                        <img src="${posts[i].perfi}" />
+                        <p><b>${posts[i].nome}</b> Não é o rosto que faz de alguém um monstro, são as escolhas que elas fazem para as suas vidas.</p>
+                        <ion-icon name="heart-outline"></ion-icon>
+                    </div>
                     <div class="card-coments">
                         <img src="${posts[i].perfi}" />
                         <p><b>${posts[i].nome}</b> Não é o rosto que faz de alguém um monstro, são as escolhas que elas fazem para as suas vidas.</p>

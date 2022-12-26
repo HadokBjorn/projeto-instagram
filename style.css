@@ -212,7 +212,6 @@ b{
 }
 .coments{
     width: inherit;
-    height: 240px;
     background-color: transparent;
     display: none;
 }
@@ -220,6 +219,8 @@ b{
     display: flex;
     flex-direction: row;
     padding: 0 15px;
+    padding-bottom: 10px;
+    background-color: #fff;
 }
 .card-coments ion-icon{
     font-size: 25px;
@@ -229,6 +230,9 @@ b{
     height: 32px;
     border-radius: 16px;
     margin-right: 10px;
+}
+.card-coments > p{
+    width: 235px;
 }
 .open-coments {
 	-webkit-animation: open-coments 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
@@ -483,6 +487,9 @@ sidebar{
 
     .bottom-post{
         margin-bottom: 0;
+    }
+    .card-coments > p{
+        width: 535px;
     }
 
     sidebar{
