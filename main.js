@@ -46,7 +46,7 @@ function linkStorie () {
 
     let postItem = `
     <a href="./page-stories/index.html#${1}">
-        <div class="card-story" id="firs-card">
+        <div class="card-story" id="first-card">
             <img src="${perfilStorie[0].img}" />
             <p>${perfilStorie[0].nome}</p>
         </div>
@@ -217,8 +217,8 @@ function newPost(){
                     </main>
                     <footer class="addComent">
                         <ion-icon name="happy-outline"></ion-icon>
-                        <input placeholder="Adicionar comentário...">
-                        <button class="publicar">Publicar</button>
+                        <input class="input-coments" type="text" id="add-comentario${[i]}" placeholder="Adicionar comentário...">
+                        <button id="publicar${[i]}" class="publicar">Publicar</button>
                     </footer>
                 </footer>
             </section>
@@ -274,8 +274,8 @@ function newPost(){
                     </main>
                     <footer class="addComent">
                         <ion-icon name="happy-outline"></ion-icon>
-                        <input placeholder="Adicionar comentário...">
-                        <button class="publicar">Publicar</button>
+                        <input class="input-coments" type="text" id="add-comentario${[i+1+quantidadeImage]}" placeholder="Adicionar comentário...">
+                        <button id="publicar${[i+1+quantidadeImage]}" class="publicar">Publicar</button>
                     </footer>
                 </footer>
             </section>
