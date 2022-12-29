@@ -144,7 +144,7 @@ function newPost(){
         perfiCurtidor: "./img/stories/denji-pochita.png",
         seguidor:"Denji",
         curtidas:"33 mil",
-        videoMp4:"https://v16-webapp.tiktok.com/57e7230d11b00ee8659d5eb4f3d0ed41/63a9eefd/video/tos/useast2a/tos-useast2a-pve-0037-aiso/e6e9a31190f1469bb48e8953ce1002a8/?a=1988&ch=0&cr=0&dr=0&lr=tiktok&cd=0%7C0%7C1%7C0&cv=1&br=1256&bt=628&cs=0&ds=3&ft=4b~OyMXh8Zmo0W_ak64jVO2cDpWrKsdm&mime_type=video_mp4&qs=0&rc=ZjRnOWQ1N2QzO2RpNTVnZEBpanU7bzc6Zjd3ZzMzZjgzM0A2YS9hMi00Xi0xYC8yNDI1YSNhYG9ecjQwXzZgLS1kL2Nzcw%3D%3D&l=202212261258548213557D6D8FE20FEDA0&btag=80000.mp4",
+        videoMp4:"https://img.ifunny.co/videos/7d262bcf59b6c2e9ff2e911efe5fa40a6757682049cf60c41689bdf5ee0b00dc_1.mp4",
         videoOgv:"./img/video.ogv",
         },
     ];
@@ -170,7 +170,8 @@ function newPost(){
                 <article class="bottom-post">
                     <header class="interaction">
                         <div class="like-post">
-                            <ion-icon name="heart-outline"></ion-icon>
+                            <ion-icon class="curtir" id="sem-curtida${[i]}" name="heart-outline"></ion-icon>
+                            <ion-icon class="like-red" id="curtida${[i]}" name="heart"></ion-icon>
                             <ion-icon name="chatbubble-outline" id="icon-coment${[i]}"></ion-icon>
                             <ion-icon name="paper-plane-outline"></ion-icon>
                         </div>
@@ -251,7 +252,8 @@ function newPost(){
                 <article class="bottom-post">
                     <header class="interaction">
                         <div class="like-post">
-                            <ion-icon name="heart-outline"></ion-icon>
+                            <ion-icon class="curtir" id="sem-curtida${[i+1+quantidadeImage]}" name="heart-outline"></ion-icon>
+                            <ion-icon class="like-red" id="curtida${[i+1+quantidadeImage]}" name="heart"></ion-icon>
                             <ion-icon name="chatbubble-outline" id="icon-coment${[i+1+quantidadeImage]}"></ion-icon>
                             <ion-icon name="paper-plane-outline"></ion-icon>
                         </div>

@@ -2,6 +2,7 @@ const btnPrev = document.getElementById("prev");
 const btnNext = document.getElementById("next");
 const firstCard = document.getElementById("firs-card");
 const coments = document.querySelectorAll(".coments");
+const likes = document.querySelectorAll(".curtir");
 
 let cont = 0;
 function esquerda(){
@@ -41,3 +42,26 @@ function comentar(){
         }
 }
 comentar();
+
+function curtir() {
+        for(let i = 0; i < likes.length; i++){
+                console.log(likes.length);
+
+                let idLike = document.getElementById(`sem-curtida${[i]}`);
+                let idLiked = document.getElementById(`curtida${[i]}`);
+                idLiked.style.display = 'none';
+                idLike.addEventListener("click",(e) =>{
+                console.log("curtiu");
+                idLike.style.display = "none";
+                idLiked.style.display = "block";
+                
+                });
+                idLiked.addEventListener("click",(e) =>{
+                        if(idLiked.style.display == 'block'){
+                                idLike.style.display = 'block';
+                                idLiked.style.display = 'none';
+                        }
+                });
+        }
+}
+curtir();
