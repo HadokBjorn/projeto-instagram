@@ -26,7 +26,7 @@ function inserirImagem() {
     ])
     storieFoto.set('4',[
     '../img/posts/Aki/aki-alta-definicao.jpg',
-    '../img/posts/Aki/aki-raposa-fundo.jpg',
+    '../img/posts/Aki/Aki-raposa-fundo.jpg',
     '../img/posts/Aki/aki.jpg',    
     ])
     storieFoto.set('5',[
