@@ -29,6 +29,7 @@ body::-webkit-scrollbar {
 }
 .dark .header-mobile{
     background-color: #262626;
+    border-bottom: 1px solid #373737;
 }
 .dark-logo{
     display: none;
@@ -40,6 +41,9 @@ body::-webkit-scrollbar {
 }
 .dark .light-logo{
     display:none;
+}
+.dark .left{
+    background-color: #262626;
 }
 .header-desktop{
     display: none;
@@ -77,14 +81,15 @@ a:focus{
     height: 121px;
     align-items: center;
     padding: 0 18px;
-    
-    
     overflow: auto;
     display: flex;
     flex-flow: row nowrap;
     gap: 14px;
     scroll-behavior: smooth;
     
+}
+.dark .story{
+    background-color: #373737;
 }
 .story::-webkit-scrollbar {
     height: 0;
@@ -125,6 +130,9 @@ p{
     margin-bottom: 60px;
 
 }
+.dark .post-container{
+    background-color: #373737;
+}
 .top-post{
     background-color: #fff;
     height: 60px;
@@ -134,6 +142,10 @@ p{
     padding: 0 17px;
     border-top: 1px solid #DBDBDB;
     border-bottom: 1px solid #DBDBDB;
+}
+.dark .top-post{
+    border-top: 1px solid #373737;
+    border-bottom: 1px solid #373737;
 }
 .top-post img{
     width: 32px;
@@ -175,6 +187,10 @@ p{
     padding: 0 15px;
     background-color: #fff;
 }
+.dark .bottom-post{
+    border-top: 1px solid #373737;
+}
+
 .interaction{
     display: flex;
     justify-content: space-between;
@@ -223,6 +239,7 @@ b{
     width: inherit;
     background-color: transparent;
     display: none;
+    
 }
 .card-coments{
     display: flex;
@@ -308,9 +325,12 @@ b{
     border-bottom: 1px solid #DBDBDB;
     background-color: #fff;
     justify-content: space-between;
+}
+.dark .addComent{
+    border-top: 1px solid #373737;
+    border-bottom: 1px solid #373737;
 
 }
-
 .addComent > ion-icon {
     font-size: 25px;
 }
@@ -326,6 +346,7 @@ b{
 }
 .dark .addComent > input {
     background-color: transparent;
+    color:#fff;
 }
 
 .addComent > button {
@@ -353,6 +374,10 @@ sidebar{
     bottom: 0;
     left: 0;
     z-index: 1;
+}
+.dark .menu-bottom{
+    border-top: 1px solid #373737;
+
 }
 .menu-bottom ion-icon {
     margin: 0 20px;
@@ -389,8 +414,12 @@ sidebar{
         left: 0;
         z-index: 2;
     }
+    .dark .header-desktop{
+        border-bottom: 1px solid #373737;
+    }
     .dark .header-desktop, .dark .header-desktop div{
         background-color: #262626;
+
     }
 
     .header-desktop > div{
@@ -417,6 +446,9 @@ sidebar{
         border-left: 1px solid #DBDBDB;
         padding-left: 5px;
     }
+    .dark .left > img {
+        border-left: 1px solid #373737;
+    }
 
     input{
         background: #FAFAFA;
@@ -435,6 +467,7 @@ sidebar{
     .dark input {
         background-color: #262626;
         color: #fff;
+        border: 1px solid #373737;
     }
     main{
         display: flex;
@@ -474,11 +507,12 @@ sidebar{
         box-sizing: border-box;
         width: 614px;
         height: 118px;
-
-        
         background: #FFFFFF;
         border: 1px solid #DBDBDB;
         border-radius: 3px;
+    }
+    .dark .story{
+        border: 1px solid #373737;
     }
     .post-container{
         width: 614px;
@@ -489,7 +523,10 @@ sidebar{
         border-left: 1px solid #DBDBDB;
         border-right: 1px solid #DBDBDB;
     }
-
+    .dark .post-container{
+        border-left: 1px solid #373737;
+        border-right: 1px solid #373737;
+    }
     .top-post{
         height: 61px;
     }
