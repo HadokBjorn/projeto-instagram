@@ -31,6 +31,9 @@ body::-webkit-scrollbar {
     background-color: #262626;
     border-bottom: 1px solid #373737;
 }
+.left{
+    margin-left: 22px;
+}
 .dark-logo{
     display: none;
 }
@@ -51,6 +54,9 @@ body::-webkit-scrollbar {
 .logo ion-icon{
     font-size: 20px;
     margin: 0 15px;
+}
+.header-mobile > ion-icon{
+    margin-right: 22px;
 }
 a{
     text-decoration: none;

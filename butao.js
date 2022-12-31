@@ -57,8 +57,6 @@ function comentar(){
                 `
                 });
                 idInput.value = "";
-
-                
         }
 }
 comentar();
